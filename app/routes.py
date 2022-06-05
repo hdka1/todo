@@ -21,10 +21,10 @@ def update(task_id):
 	    
     try:
         if "status" in data:
-            # db_helper.update_status_entry(task_id, data["status"])
+            db_helper.update_status_entry(task_id, data["status"])
             result = {'success': True, 'response': 'Status Updated'}
         elif "description" in data:
-            # db_helper.update_task_entry(task_id, data["description"])
+            db_helper.update_task_entry(task_id, data["description"])
             result = {'success': True, 'response': 'Task Updated'}
         else:
             result = {'success': True, 'response': 'Nothing Updated'}
@@ -36,7 +36,7 @@ def update(task_id):
 @app.route("/create", methods=['POST'])
 def create():
     data = request.get_json()
-    # db_helper.insert_new_task(data['description'])
+    db_helper.insert_new_task(data['description'])
     result = {'success': True, 'response': 'Done'}
     return jsonify(result)
 

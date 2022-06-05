@@ -3,10 +3,10 @@ runtime: python38 # or another supported version
 instance_class: F1 # this is the cheapest option
 
 env_variables:
-  MYSQL_USER: <fill username>
-  MYSQL_PASSWORD: <fill password>
+  MYSQL_USER: "root"
+  MYSQL_PASSWORD: ""
   MYSQL_DB: 'todo'
-  MYSQL_HOST: <fill mysql gcp ip>
+  MYSQL_HOST: "localhost"
 
 handlers:
 
