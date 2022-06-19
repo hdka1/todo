@@ -14,8 +14,15 @@ SQLAlchemy==1.4.36
 Werkzeug==2.1.2
 whitenoise==6.2.0
 zipp==3.8.0
+<<<<<<< HEAD
 discord.py
 beautifulsoup4
 fuzzywuzzy
 openpyxl==2.5.12
 requests
+=======
+selenium==3.141.0
+datetime
+pyfcm==1.5.1
+firebase_admin==4.5.0
+>>>>>>> cd78bb78542ac6f1d89c67f3608a2927ea97719d
