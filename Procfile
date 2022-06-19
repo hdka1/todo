@@ -1,1 +1,1 @@
-worker: python parsingpost.py
+worker: python main.py
